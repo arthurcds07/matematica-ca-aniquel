@@ -7,13 +7,14 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #f1f1f1;
 }
 
-.slot-machine {
+.maquina {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,5 +43,20 @@ button {
   margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
-  color: green;
+}
+
+.slot {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  font-size: 48px;
+  transition: transform 0.1s ease;
+}
+
+.slot:active {
+  transform: scale(1.05);
 }

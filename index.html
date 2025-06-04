@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Caça-Níquel</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="slot-machine">
-    <div class="slot">
-      <span id="slot1">🍒</span>
-    </div>
-    <div class="slot">
-      <span id="slot2">🍒</span>
-    </div>
-    <div class="slot">
-      <span id="slot3">🍒</span>
-    </div>
+<body>  
+  <h2 id="banca">Banca Atual: $10000</h2>
+  
+  <div class="maquina">
+    <div class="slot"><span id="slot1">🍒</span></div>
+    <div class="slot"><span id="slot2">🍒</span></div>
+    <div class="slot"><span id="slot3">🍒</span></div>
   </div>
-  <button id="spinBtn">Girar</button>
+
+  <button id="spinBtn">Girar (-$500)</button>
   <p id="result"></p>
 
   <script src="script.js"></script>
